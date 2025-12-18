@@ -77,7 +77,7 @@ public class TradePostMarket extends OpenMarketPlugin {
     protected void createTooltipAfterDescription(TooltipMakerAPI tooltip, boolean expanded) {
         int currDay = Global.getSector().getClock().getDay();
         tooltip.addSectionHeading("Temporary Market", Alignment.MID,5f);
-        tooltip.addPara("Due to limited operations this market is only opened for first seven days, at the beginning of the month",3f);
+        tooltip.addPara("Due to limited operations this market is only opened for first seven days of each month",3f); //Zero: This tooltip explanation always bothered me. Updated it so its a bit easier to read and understand.
         if(currDay>7){
             tooltip.addPara("Market closed! Come next month.", Misc.getNegativeHighlightColor(),10f);
         }

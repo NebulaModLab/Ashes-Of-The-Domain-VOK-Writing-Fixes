@@ -32,7 +32,7 @@ public class AoTDGungnirRelicProjCorrector  extends BaseEveryFrameCombatPlugin{
         }
          elapsed+=engine.getElapsedInLastFrame();
         float speed = proj.getVelocity().length();
-        float differnce =  speed - maxSpeed;
+        float differnce =  speed - maxSpeed; // Zero: differnce -> difference
         if(differnce>0){
             float factor = maxSpeed / speed;
             proj.getVelocity().scale(factor);

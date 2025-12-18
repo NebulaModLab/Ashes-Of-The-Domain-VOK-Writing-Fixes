@@ -13,7 +13,7 @@ public class ResearchFacilityMarket extends BaseSubmarketPlugin {
     public void init(SubmarketAPI submarket) {
         super.init(submarket);
 
-        this.submarket.setFaction(Global.getSector().getFaction("researchfacil"));
+        this.submarket.setFaction(Global.getSector().getFaction("researchfacil")); //Zero: this should be "researchfacility" or "researchlab", depending on whats used. Some broken english right here man.
     }
 
     public void updateCargoPrePlayerInteraction() {

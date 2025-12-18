@@ -80,7 +80,7 @@ public class CommandingPresence extends BaseHullMod {
                 Math.round(SOFT_FLUX_EFFECTIVENESS) + "%"
         );
 
-        tooltip.addPara("The imposing aura of the unyeilding, unbreakable Citadel bolsters shield systems through sheer force of will.", pad, orange, "unyeilding, unbreakable Citadel", "imposing aura");
+        tooltip.addPara("The imposing aura of the unyielding, unbreakable Citadel bolsters shield systems through sheer force of will.", pad, orange, "unyielding, unbreakable Citadel", "imposing aura"); //Zero: unyielding typo error here, shouldn't break anything I think.
     }
 
     @Override

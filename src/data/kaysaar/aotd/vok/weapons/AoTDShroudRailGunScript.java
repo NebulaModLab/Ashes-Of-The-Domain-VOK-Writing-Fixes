@@ -31,7 +31,7 @@ public class AoTDShroudRailGunScript implements OnFireEffectPlugin, OnHitEffectP
         timer.advance(0.1f);
 
         if (timer.intervalElapsed()) {
-            Iterator projiter = engine.getProjectiles().iterator();
+            Iterator projiter = engine.getProjectiles().iterator(); //Zero: projiter? not sure if this is actually the name Kay has used if there is another that uses this name, maybe should be Proj-something?
             while (projiter.hasNext()) {
                 DamagingProjectileAPI proj = (DamagingProjectileAPI) projiter.next();
                 if (proj.getWeapon() == weapon) {

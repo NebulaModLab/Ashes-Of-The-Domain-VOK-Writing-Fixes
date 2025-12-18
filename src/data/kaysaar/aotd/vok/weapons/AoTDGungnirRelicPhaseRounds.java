@@ -203,7 +203,7 @@ public class AoTDGungnirRelicPhaseRounds implements OnHitEffectPlugin,OnFireEffe
                 project.getVelocity().set(proj.getVelocity());
                 project.setFacing(proj.getFacing());
                 float speed = project.getVelocity().length();
-                float differnce =  speed - maxSpeed;
+                float differnce =  speed - maxSpeed; // Zero: differnce -> difference
                 if(differnce>0){
                     float factor = maxSpeed / speed;
                     project.getVelocity().scale(factor);
